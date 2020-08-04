@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="start listening"
+        android:id="@+id/listen"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="CONNECT"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/connect"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER IP"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:id="@+id/IP"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data"
+        android:textSize="20dp"
+        android:text="ENTER MESSAGE"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/sndbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="SEND"
+        android:textSize="30dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SEND FILE"
+        android:onClick="sendFile"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="RECIEVE FILE"
+        android:onClick="CameraButton"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+
+
+</LinearLayout>
